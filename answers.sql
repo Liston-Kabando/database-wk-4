@@ -5,3 +5,7 @@ GROUP BY paymentdate
 ORDER BY paymentdate DESC
 LIMIT 5;
 -- question 2
+SELECT CustomerName, country, avg(creditlimit) AS avgcreditlimit
+FROM customers
+GROUP BY customerName, country;
+
