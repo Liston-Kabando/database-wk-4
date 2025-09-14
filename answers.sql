@@ -12,6 +12,12 @@ GROUP BY customerName, country;
 SELECT productcode, quantityOrdered, sum(quantityOrdered*priceEach) AS totalProductPrice
 FROM orderdetails
 GROUP BY productCode, QuantityOrdered;
+--question 4
+SELECT checkNumber, MAX(amount) AS highestPayment
+FROM payments
+GROUP BY checkNumber;
+
+
 
 
 
